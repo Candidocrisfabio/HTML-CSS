@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {  background-color: aqua;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+h1{     color: rgb(16, 80, 3);}
+
+h1#principal { text-align: center;
+                background-color: cornflowerblue;}
+
+h2{     color: rgb(31, 4, 66);}
+
+.basico {     color: rgb(201, 235, 13);}
+.inter {      color: darkgreen;
+               text-align: center;}
+.avan {       color: crimson;}
+
+.destaque { background-color: darkgoldenrod;}
+
+p{      text-indent: 30px;
+        text-align: justify;}

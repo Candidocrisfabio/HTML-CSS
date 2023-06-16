@@ -1,0 +1,33 @@
+* { margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;}
+
+.box-degrade{   
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left,#be23c2,#c28e2d,#c2b419,#59c217,#105cc2);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;}
+
+.box-degrade h1{font-family: "AngerStyles"; 
+                color: white;
+                font-weight: border;
+            }
+
+@font-face {
+                font-family: "AngerStyles";
+                src: url("AngerStyles.ttf") format(truetype);
+                font-weight: normal;
+                font-style: normal;
+            } 
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;}
+    100%{
+        background-position-x: 100%;}
+    }

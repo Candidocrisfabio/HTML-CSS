@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios</title>
+
+    <style>
+
+        body { background-color: rgb(81, 183, 187);}
+
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Inserindo audios e videos hospedados localmente</h1>
+    <p>Aqui tem uma musica para você</p>
+    <!--mp3 , wav , ogg-->
+    <audio preload="metadata" autoplay controls loop >
+        <source src="midia/On The Rocks - TrackTribe.mp3" type="audio/mpeg">
+        <source src="midia/On The Rocks - TrackTribe.ogg" type="audio/ogg">
+        <source src="midia/On The Rocks - TrackTribe.wav" type="audio/wav"> 
+        <p>Infelizmente seu navegador não permite reproduzir o audio</p>
+    </audio>
+
+    <p><a href="midia/On The Rocks - TrackTribe.mp3">clique aui para baixar o arquivo</a></p>
+
+    <p>Este vídeo está hospedado no meu próprio servidor </p>
+    <p>Veja aqui o video </p>
+    <video  width="560" height="315" poster="imagens/pexels-nancy-folgmann-220911.jpg" width="560px" autoplay controls loop>
+        <source src="midia/pexels-solodsha-9008429-1080x1574-30fps.mp4" type="video/mp4">
+        <source src="midia/Pexels-Solodsha-9008429-1080X1574-30Fps.webm" type="video/webm">
+        <p>seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Inserindo audios e videos de sites de hospedagem como o youtube.com </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FUqttxtk8y0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe  width="560" height="315" src="https://player.vimeo.com/video/508438159?h=21cb839c6f" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/508438159">Animacao</a> from <a href="https://vimeo.com/user132841493">Filipe Casaca</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

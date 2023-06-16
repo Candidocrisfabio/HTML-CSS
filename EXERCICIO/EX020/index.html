@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudo Classes</title>
+    <style>
+        div { background-color: rgb(231, 238, 238);
+                font-size: 1.5em;
+                text-align: center;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                display: inline-block;}
+
+        div:hover {background-color: deeppink;}
+
+        div > p { display: none;}
+
+        div:hover > p { display: block;
+                        color: #ffffff;
+                        background-color: rgb(241, 206, 7);}
+    </style>
+
+
+</head>
+<body>
+
+    <div id="d1">Passe o mouse aqui 
+        <p>texto escondido </p>
+    </div>
+
+
+    <div id="d2"> Passe o mouse aqui
+        <p>vc acertou </p>
+    </div>
+
+    <div id="d3">Aqui
+        <p>hover em ação </p>
+    </div>
+    
+</body>
+</html>

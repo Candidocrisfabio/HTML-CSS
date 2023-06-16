@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTILIZAR PSEUDO ELEMENTO ::AFERT , ::BEFORE</title>
+    <style>
+
+        body { padding: 60px;
+                background-color: rgb(142, 222, 224);}
+
+        h1{ text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: blue;
+            height: 30px;}
+
+        h1::after , h1::before { content: " ";
+                    width: 200px;
+                    height: 10px;
+                    background-color: rgb(4, 92, 31);
+                    display: block;
+                    margin: 5px auto ;}
+
+
+        p{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-style: italic;
+                text-align: justify;
+                text-indent: 30%;
+                max-width: 500px;
+                line-height: 1.0em;
+                margin: 50px auto;
+                color: rgb(12, 12, 12);   }
+
+        p::after , p::before { content: " ";
+                    width: 100px;
+                    height: 5px;
+                    background-color: rgb(75, 241, 9);
+                    display: block;
+                    margin: 20px auto ;}
+
+    </style>
+
+</head>
+<body>
+    <H1>CURSOS DE WEB DESIGN</H1>
+    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum accusamus sequi vero, facilis eaque, dicta vel placeat libero, reprehenderit consectetur ex deserunt debitis enim molestias eos maxime quaerat dolores necessitatibus.</P>
+    <h1>cursos de html</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores doloribus earum molestiae cumque officiis molestias, adipisci debitis! Dolorem error commodi laborum maiores ex fugiat consequuntur earum, nisi temporibus. Ipsa.</p>
+
+
+</body>
+</html>

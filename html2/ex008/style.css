@@ -1,0 +1,42 @@
+
+body { margin: 30px;}
+.box { background-color: blue;
+    height: 300px;
+    width: 300px;
+
+    transition-property: background-color , border-radius;
+    transition-duration: 2s, 1.5s;
+    transition-delay: 0.4s;
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);}
+
+
+
+.box:hover { background-color: rgb(5, 143, 16);
+            border-radius: 50%;}
+
+.bd { margin: 20px;
+    height: 26vh;
+    display: grid;
+    outline: 10px solid green;}
+
+img { transform: translate(500px, 100%) scale(2.5) ;}
+
+.bola { 
+margin: 0px 0px 0px 1000px;
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+
+    transition-property: background-color , border-radius;
+    transition-duration: 2s, 1.5s;
+    transition-delay: 0.4s;
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);}
+
+.bola:hover { background-color: rgb(195, 236, 10);
+             border-radius: 50%;}
+
+.caixa {    width: 1330px;
+            background-color:white;
+            margin: auto;}
+
+

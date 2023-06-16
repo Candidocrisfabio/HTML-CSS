@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando caixas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{ font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: dimgray;
+                }
+
+        header{ background-color: aliceblue;
+                height: 100px;
+                padding-left: 10px;
+                margin: 10px;}
+
+       
+
+        main { background-color: aliceblue;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10px;}
+
+        article{ background-color: aqua;
+                    box-shadow: 3px 3px 8px black;}
+
+        article > aside { background-color: rgb(16, 141, 190);
+                            height: 250px;
+                            margin: 10px;
+                            }
+
+        footer{ background-color: black;
+                color: aliceblue;
+                text-align: center;
+                padding: 1px;
+                margin: 0px;}
+
+        p{ text-align: justify;
+            text-indent: 20%;
+            margin: 2% 2% 2% 2%}
+
+        h1{ text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;}
+
+        h2{ text-align: center;
+            margin: 2% 2%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;}
+
+        #bola {     height: 100px;
+                    width: 100px;
+                    margin: 10px;
+                    background-color: white;
+                    border-radius: 50%;}
+
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">home</a>
+            <a href="">quem somos</a>
+            <a href="">artigos</a>
+            <a href="">produtos</a>
+            <a href="">contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h1>Meu curso de HTML</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis officia modi impedit autem, ad repellendus. Quibusdam, voluptatibus mollitia quod deleniti esse fugiat molestias harum saepe quaerat eum dignissimos totam. Sed.</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h1><span><img src="java.png" alt=""></span>Os cursos de html e Css são os mais procurados </h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam architecto sint in dignissimos fuga, incidunt nesciunt libero facilis minus provident a quibusdam debitis quas at culpa ad repudiandae, odio dicta?</p>
+                <aside>
+                    
+                    <h2><span><img src="html-5-icon.png" alt=""></span>Outros cursos de tecnologia </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate repellendus corporis odit facere, ullam dignissimos quo, voluptas repellat eum, magnam ab sequi. Et est libero temporibus totam facilis ad!</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Fábio c Cândido</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

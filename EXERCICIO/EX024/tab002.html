@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+
+        body{ font-family: Arial, Helvetica, sans-serif;}
+        
+        h1{ background-color: chartreuse;
+            margin: auto;
+            width: 500px;
+            text-align: center;}
+
+        table { width: 500px;
+                margin: auto;
+                position: relative;}
+
+        td, th { border: 1px solid black;
+                  padding: 10px;}
+
+        thead { background-color: cadetblue;
+                color: white;}
+
+        tfoot { background-color: cadetblue;
+                color: white}
+
+        thead > tr > th { position: sticky;
+                            top: 1px;
+                        background-color: cornflowerblue;}
+        
+        tbody > tr:nth-child(even){ background-color: lightgray;}
+        tbody > tr:nth-child(odd){ background-color: rgb(118, 183, 236);}
+
+        .num { text-align: right;}
+
+        #rico { background-color: yellow;}
+
+        caption { color: red;
+                font-size: 1,5em;
+                font-weight: bolder;
+                padding: 10px;background-color: cornflowerblue;}
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes </h1>
+    <table>
+        <caption>População das unidades federativas </caption>
+        <thead>
+            <tr>
+
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+                <tr id="rico">
+                    <td>São Paulo</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Mato grosso</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Mato grosso do sul</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Rio grande do sul</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Santa catarina </td>
+                    <td class="num">45919</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Para</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Minas gerais</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Rio grande do norte</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Ceara</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Piaui</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Distrito federal</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Rondonia</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Rio de janeiro</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Espirito santo</td>
+                    <td class="num">45919049</td>
+                </tr>
+        </tbody>
+        <tfoot>
+                <th scope="row">Total de habitantes </th>
+                <td><strong>20000000</strong> </td>
+        </tfoot>
+    </table>
+</body>
+</html>
