@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+    <style>
+        body{
+            background-color: rgb(41, 53, 53);
+            color: white;
+        }
+        h1{
+            color: brown;
+            font-size: 3em;
+        }
+        #botao{
+            height: 50px;
+            width: 100px;
+            background-color: brown;
+            color: cadetblue;
+        }
+
+        #botao:hover{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+                <!-- Estudar mais sobre REGex -->
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+                <!-- ^[0-9]{4}-[0-9]{4}$-->
+                <!-- ^\(\d{2}\)\d{4,5}-\d{4}$-->
+                <!-- Estudar mais sobre REGex ( pattern )-->
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Prova</legend>
+            <p>
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+            </p>
+            <p>
+                <label for="ihora">Horario da prova:</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <label for="idia">Dia da prova:</label>
+                <input type="date" name="dia" id="idia">
+            </p>
+            <p>
+                <label for="imes">Periodo letivo:</label>
+                <input type="month" name="mes" id="imes">
+            </p>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"><label for="isxmas" value="M">Masculino</label><br>
+
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem" checked>Feminino</label>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tenis</label><br>
+            <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">Voleibol</label><br>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Outras informações</legend>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+
+            <p>
+                <label for="inivel">Nivel de satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="0">
+            </p>
+
+            <p>
+                <label for="ifoto">Foto do perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+                <!-- se mandar foto 3000 bits o metodo deve ser o post-->
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações adcionais</legend>
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="estado" id="iest">
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Sudeste">
+                        <option value="RJ"> RIO DE JANEIRO</option>
+                        <OPtion value="SP"> SÃO PAULO</OPtion>
+                        <option value="MG">MINAS GERAIS</option>
+                    </optgroup>
+                    <optgroup label="Centro Oeste">
+                        <option value="MS">MATO GROSSO DO SUL</option>
+                        <option value="MT">MATO GROSSO</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="SC">SANTA CATARINA</option>
+                        <option value="RS">RIO GRANDE DO SUL</option>
+                    </optgroup>
+                    
+                </select>
+                    
+            </p>
+
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">ADMINISTRAÇÃO</option>
+                    <option value="TEC">TECNICO</option>
+                    <option value="CONT">CONTADOR</option>
+                    <option value="DEV">DESENVOLVEDOR</option>
+                    <option value="PROF">PROFESSOR</option>
+                </datalist>
+            </p>
+
+            <P>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </P>
+        </fieldset>
+
+
+            <p>
+                <input id="botao" type="submit" value="Enviar">
+                <input id="botao" type="reset" value="Limpar">
+            </p>
+        
+    </form>
+</body>
+</html>
