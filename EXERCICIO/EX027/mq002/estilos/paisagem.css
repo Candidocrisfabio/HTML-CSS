@@ -1,2 +1,7 @@
 @charset "UTF-8";
-/* configuraões para celular em modo paisagem*/
+/* configurações para celular em modo paisagem*/
+
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
