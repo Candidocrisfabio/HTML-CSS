@@ -35,6 +35,10 @@ span#burguer:hover{
     color: black;
 }
 
+menu {
+    display: none;
+}
+
 menu > ul {
     list-style-type: none;
 }
@@ -54,7 +58,7 @@ menu > ul > li > a:hover {
 }
 
 main {
-    width: 90vw;
+    max-width: 60vw;
     background-color: white;
     margin: auto;
     margin-top: 10px;
@@ -67,10 +71,12 @@ article > h2 {
     padding-bottom: 20px;
 }
 
-img {
+img { 
     display: block;
-    width: 90vw;
-}
+    background-size: cover;
+    width: 90%;   
+    padding: 10px;
+    }
 
 article > p {
     text-align: justify;
